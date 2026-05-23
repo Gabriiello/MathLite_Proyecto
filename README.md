@@ -167,19 +167,6 @@ print(abs(-5))
 
 ---
 
-## Base de Datos NoSQL y Despliegue
-
-La aplicacion web puede guardar cada ejecucion como caso de prueba en MongoDB
-Atlas. Para activarlo, definir estas variables de entorno antes de iniciar la
-app:
-
-```bash
-MATHLITE_MONGODB_URI="mongodb+srv://usuario:clave@cluster.mongodb.net/"
-MATHLITE_MONGODB_DB="mathlite"
-```
-
-Si `MATHLITE_MONGODB_URI` no existe, la aplicacion sigue funcionando en modo
-local sin almacenamiento externo.
 
 Endpoints disponibles:
 
