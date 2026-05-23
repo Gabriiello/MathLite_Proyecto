@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: mathlite
+    env: python
+    buildCommand: pip install -r Requirements.txt
+    startCommand: gunicorn web.app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: MATHLITE_MONGODB_URI
+        sync: false
+      - key: MATHLITE_MONGODB_DB
+        value: mathlite
